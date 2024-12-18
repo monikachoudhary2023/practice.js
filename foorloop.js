@@ -8,3 +8,15 @@ for (let i = 1; i <= 10; i++) {
 
 // Output the result
 console.log("The sum of the first 10 natural numbers is:", sum);
+
+
+/*check even number 0 to 100 */
+for (let num = 0; num <= 100; num++)
+{
+    if(num%2===0)
+    {
+        console.log("num=", num);  
+    }
+      
+
+}
