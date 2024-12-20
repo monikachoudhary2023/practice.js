@@ -1,18 +1,72 @@
 // Function to check divisibility by 2 and 3
-function isDivisibleBy2And3(number) {
-    if (number % 2 === 0 && number % 3 === 0) {
-        return `${number} is divisible by both 2 and 3.`;
-    } else if (number % 2 === 0) {
-        return `${number} is divisible by 2 but not by 3.`;
-    } else if (number % 3 === 0) {
-        return `${number} is divisible by 3 but not by 2.`;
-    } else {
-        return `${number} is not divisible by 2 or 3.`;
-    }
+
+// Write a Function to Add Two Numbers
+function addNumbers(a, b) {
+    return a + b;
 }
 
-// Input: Replace with any number you want to test
-let testNumber = 12; // Change this value to test other numbers
+console.log(addNumbers(3, 5)); 
+console.log(addNumbers(10, 15)); 
 
-// Output result
-console.log(isDivisibleBy2And3(testNumber));
+// Check if a Number is Even or Odd
+function isEven(num) {
+    return num % 2 === 0;
+}
+
+console.log(isEven(4)); 
+console.log(isEven(7)); 
+
+//Find the Maximum of Two Numbers
+function maxOfTwo(a, b) {
+    return a > b ? a : b;
+}
+
+console.log(maxOfTwo(10, 20)); 
+console.log(maxOfTwo(7, 3)); 
+
+// Reverse a String
+function reverseString(str) {
+    return str.split('').reverse().join('');
+}
+
+// Example Usage
+console.log(reverseString("hello")); 
+console.log(reverseString("JavaScript")); 
+
+//Check if a Number is Prime
+function isPrime(num) {
+    if (num < 2) return false;
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) return false;
+    }
+    return true;
+}
+console.log(isPrime(7)); 
+
+//Find the Factorial of a Number
+function factorial(n) {
+    if (n < 0) return "Invalid input";
+    if (n === 0) return 1;
+    return n * factorial(n - 1);
+}
+
+console.log(factorial(5)); 
+console.log(factorial(0)); 
+
+
+// Check if a String is a Palindrome
+function isPalindrome(str) {
+    const reversed = str.split('').reverse().join('');
+    return str === reversed;
+}
+
+console.log(isPalindrome("madam")); 
+console.log(isPalindrome("hello")); 
+
+// Generate a Random Number Between Two Values
+function randomNumberBetween(min, max) {
+    return Math.random() * (max - min) + min;
+}
+
+console.log(randomNumberBetween(1, 10)); 
+console.log(randomNumberBetween(20, 30)); 
