@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Genders</title>
+
+</head>
+<body>
+    <form>
+        <input type="radio" name="gender" value="male"> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+        <input type="radio" name="gender" value="other"> Other<br>
+    </form>
+
+    <script>
+     
+        const genderElements = document.getElementsByName("gender");
+
+        
+        const totalGenders = genderElements.length;
+
+     
+        console.log("Total number of genders:", totalGenders);
+    </script>
+</body>
+</html>
